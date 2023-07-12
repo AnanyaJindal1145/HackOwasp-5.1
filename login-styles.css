@@ -21,6 +21,7 @@ body{
     font-family: myFirstFont;
     font-size: 1.7rem;
     box-shadow: 0 0px 10px #fff;
+    border:1px solid #282828;
     
     
 }
@@ -30,10 +31,10 @@ body{
 .red{
     background-color: #Ff6961;
     color: #F8E1BE;
+}
 
-    
-
-    
+.all-hover{
+    box-shadow: 0 0 10px #000;
     
 }
 
