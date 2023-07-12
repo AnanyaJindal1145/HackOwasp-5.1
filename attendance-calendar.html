@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="attendance-schedule.css">
+    <link rel="stylesheet" href="attendance-calendar.css">
+    <link rel="stylesheet" href="calendar.css">
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!--<title>Dashboard Sidebar Menu</title>--> 
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
 </head>
 <body>
     <nav class="sidebar close">
@@ -49,16 +50,16 @@
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Revenue</span>
+                            <span class="text nav-text">Calendar</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <!-- <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-bell icon'></i>
                             <span class="text nav-text">Notifications</span>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-link">
                         <a href="#">
@@ -67,17 +68,17 @@
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <!-- <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-heart icon' ></i>
                             <span class="text nav-text">Likes</span>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">Wallets</span>
+                            <span class="text nav-text">Expense Tracker</span>
                         </a>
                     </li>
 
@@ -110,7 +111,8 @@
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Sidebar</div>
+        <div class="text">Welcome,User!</div>
+        <div id="calendar"></div><!--calendar-->
     </section>
 
     <script>
@@ -141,6 +143,7 @@ modeSwitch.addEventListener("click" , () =>{
     }
 });
     </script>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="calendar.js"></script>
 </body>
 </html>
