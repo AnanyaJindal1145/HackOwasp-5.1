@@ -1,63 +1,101 @@
 body{
-    background-image: url(BG\ BLUR.png);
+    margin:0;
+    padding:0;
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(flying-bird-font/FlyingBird-Yz9Ga.otf);
+    font-family: myFont;
+    src: url(deluxe\ font/DeluxesBold-BWpyd.otf);
 }
+
+
 .flex-parent{
     display: flex;
-    width:85%;
-    height:550px;
-    margin:50px auto;
+    width:100%;
+    height:800px;
+    margin:0;
 
 }
 
 .red,.blue{
     width:100%;
-    margin: 4px;
-    border-radius: 20px;
-    font-family: myFirstFont;
-    font-size: 1.7rem;
-    box-shadow: 0 0px 10px #fff;
-    border:1px solid #282828;
-    
+    font-size:1.7rem;
+    font-family: myFont;
+
+}
+
+.line1,.line2{
+    border: 1px solid #fff;
+    margin: 50px;
     
 }
 
+.line2{
+    margin-top:400px;
+}
 
+.box1{
+    border-top:1px solid #fff;
+    border-left:1px solid #FFF;
+    border-right:1px solid #fff;
+    margin:40px;
+    height:565px;
+    width:93.8%;
 
+}
+
+.box2{
+    border-bottom:1px solid #fff;
+    border-right:1px solid #FFF;
+    margin:40px;
+    height:565px;
+    
+}
 .red{
-    background-color: #Ff6961;
-    color: #F8E1BE;
+    background-color: #780000;
+    color: #fff;
+
 }
 
-.all-hover{
-    box-shadow: 0 0 10px #000;
+/*.t-red{
+    background-color: #f9666699;
+    margin-left:90px;
     
-}
+}*/
+
 
 .blue{
-    background-color: #4477B9;
+    background-color: #033C6B;
     text-align: right;
-    color: #EEF8EB;
-
+    color: #fff;
+    
    
 }
 
+/*.t-blue{
+    background-color: #a3b5c099;
+    margin-right:90px;
+}
+
+.t-red,.t-blue{
+    margin-top:90px;
+    height:500px;
+    font-family: myFont;
+}*/
+
 
 .text1{
-    margin-left:80px;
-    margin-top:20px;
-    -webkit-text-stroke: .2px #282828;
+    margin-left:40px;
+    margin-top:40px;
+    
 
 
 }
 .text2{
-    margin-right:80px;
+    margin-right:40px;
     margin-top:20px;
-    -webkit-text-stroke: .2px #282828;
+    
+    
 }
 
 .button-div{
