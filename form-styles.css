@@ -7,7 +7,10 @@
 body {
 	margin: 0;
 	font-family: Abel, Verdana, Geneva, Tahoma, sans-serif;
-	background: #3b4465;
+	background: #435B66;
+}
+.pink-text{
+    color:#eab2ac;
 }
 
 .forms-section {
@@ -21,7 +24,7 @@ body {
 	font-size: 36px;
 	letter-spacing: 1px;
     padding-top: 15px;
-	color: #fff;
+	color: #f3f5f3;
 }
 
 .forms {
@@ -67,7 +70,7 @@ body {
 	font-family: inherit;
 	font-size: 24px;
 	letter-spacing: .5px;
-	color: #999;
+	color: grey;
 	background-color: transparent;
 	border: none;
 	outline: none;
@@ -76,12 +79,12 @@ body {
 }
 
 .form-wrapper.is-active .switcher-login {
-	color: #fff;
+	color: #eab2ac;
 	transform: translateX(90px);
 }
 
 .form-wrapper.is-active .switcher-signup {
-	color: #fff;
+	color: #eab2ac;
 	transform: translateX(-90px);
 }
 
@@ -138,28 +141,28 @@ body {
 
 @keyframes showLogin {
 	0% {
-		background: #d7e7f1;
+		background: #2d4356;
 		transform: translate(40%, 10px);
 	}
 	50% {
 		transform: translate(0, 0);
 	}
 	100% {
-		background-color: #fff;
+		background-color: #f3f5f3;
 		transform: translate(35%, -20px);
 	}
 }
 
 @keyframes hideLogin {
 	0% {
-		background-color: #fff;
+		background-color: #f3f5f3;
 		transform: translate(35%, -20px);
 	}
 	50% {
 		transform: translate(0, 0);
 	}
 	100% {
-		background: #d7e7f1;
+		background: #2d4356;
 		transform: translate(40%, 10px);
 	}
 }
@@ -174,28 +177,28 @@ body {
 
 @keyframes showSignup {
 	0% {
-		background: #d7e7f1;
+		background: #2d4356;
 		transform: translate(-40%, 10px) scaleY(.8);
 	}
 	50% {
 		transform: translate(0, 0) scaleY(.8);
 	}
 	100% {
-		background-color: #fff;
+		background-color: #f3f5f3;
 		transform: translate(-35%, -20px) scaleY(1);
 	}
 }
 
 @keyframes hideSignup {
 	0% {
-		background-color: #fff;
+		background-color: #f3f5f3;
 		transform: translate(-35%, -20px) scaleY(1);
 	}
 	50% {
 		transform: translate(0, 0) scaleY(.8);
 	}
 	100% {
-		background: #d7e7f1;
+		background: #2d4356;
 		transform: translate(-40%, 10px) scaleY(.8);
 	}
 }
@@ -236,8 +239,9 @@ body {
 }
 
 .input-block label {
-	font-size: 14px;
-  color: #a1b4b4;
+	font-size: 20px;
+  color: #a76f6f;
+  
 }
 
 .input-block input {
@@ -248,10 +252,10 @@ body {
 	padding-left: 15px;
 	font-size: 16px;
 	line-height: 40px;
-	color: #3b4465;
-  background: #eef9fe;
-  border: 1px solid #cddbef;
-  border-radius: 2px;
+	color: #a76f6f;
+  background:gainsboro;
+  border: 1px solid #A76F6F;
+  border-radius: 5px;
 }
 
 .form [type='submit'] {
@@ -273,14 +277,14 @@ body {
 }
 
 .btn-login {
-	color: #fbfdff;
-	background: #a7e245;
+	color: #f5f3f5;
+	background: #2d4356;
 	transform: translateX(-30%);
 }
 
 .btn-signup {
-	color: #a7e245;
-	background: #fbfdff;
-	box-shadow: inset 0 0 0 2px #a7e245;
+	color: #2d4356;
+	background: #f5f3f5;
+	box-shadow: inset 0 0 0 2px #2d4356;
 	transform: translateX(30%);
 }

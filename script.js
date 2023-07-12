@@ -1,9 +1,11 @@
 $(".red").mouseover(function(){
-    $(".red").addClass("all-hover");
+    $(".red").addClass("red-hover");
+    $(".blue").addClass("blue-when-red-hover");
 })
 
 $(".red").mouseout(function(){
-    $(".red").removeClass("all-hover");
+    $(".red").removeClass("red-hover");
+    $(".blue").removeClass("blue-when-red-hover");
 })
 
 $(".blue").mouseover(function(){

@@ -117,6 +117,13 @@ body{
 
 }
 
+.red-hover{
+    width:75%;
+}
+.blue-when-red-hover{
+    width:25%;
+}
+
 /*.t-red{
     background-color: #f9666699;
     margin-left:90px;
