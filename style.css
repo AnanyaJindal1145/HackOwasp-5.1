@@ -1,0 +1,71 @@
+body{
+    background-image: url(login-screen-bg-2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(flying-bird-font/FlyingBird-Yz9Ga.otf);
+}
+
+.switch-parent {
+    display: flex;
+}
+
+.switch-child {
+    margin-top: 6%;
+    justify-content: center;
+    text-align: center;
+}
+.blue,.red{
+    width: 20%;
+    box-shadow:0 0 10px #000000;
+    height: 300px;
+    padding-top: 150px;
+}
+.blue{
+    margin-left: 10%;
+    background-color: #4477b9;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.red{
+    margin-right: 10%;
+    background-color: #f45d5d;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.grey{
+    width: 60%;
+    background-color: rgb(40, 39, 39);
+    height: 450px;
+}
+#expense-link,#attendance-link{
+    font-size: 45px;
+    text-decoration: none;
+    font-family: myFirstFont,Arial, Helvetica, sans-serif;
+}
+#expense-link{
+    color: #a7d2da;
+}
+#attendance-link{
+    color: #f8e1be;
+}
+.login-heading{
+    font-family: myFirstFont,Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+}
+.btns{
+    display: flex;
+}
+.login-btn,.signup-btn {
+    margin-top: 6%;
+    justify-content: center;
+    text-align: center;
+}
+.login-btn{
+    margin-left: 40%;
+}
