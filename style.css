@@ -1,8 +1,8 @@
-body{
+/*body{
     background-image: url(login-screen-bg-2.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-}
+}*/
 
 @font-face {
     font-family: myFirstFont;
@@ -14,33 +14,38 @@ body{
 }
 
 .switch-child {
-    margin-top: 6%;
+    margin-top: 5%;
     justify-content: center;
     text-align: center;
 }
 .blue,.red{
     width: 20%;
-    box-shadow:0 0 10px #000000;
-    height: 300px;
-    padding-top: 150px;
+    box-shadow:0 3px 15px #000000;
+    padding-top: 170px;
+    z-index:1;
+    -webkit-text-stroke: 1px #282828;
 }
 .blue{
     margin-left: 10%;
-    background-color: #4477b9;
+    background-color: #1761B0;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 .red{
     margin-right: 10%;
-    background-color: #f45d5d;
+    background-color: #d2292d;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
 .grey{
-    width: 60%;
-    background-color: rgb(40, 39, 39);
-    height: 450px;
+    width: 45%;
+    background-color: #282828;
+    height: 500px;
+    box-shadow: 0 3px 15px #000;
+    /*clip-path: inset(-15px 0 -15px 0);*/
+    z-index:2;
+    
 }
 #expense-link,#attendance-link{
     font-size: 45px;
@@ -48,24 +53,38 @@ body{
     font-family: myFirstFont,Arial, Helvetica, sans-serif;
 }
 #expense-link{
-    color: #a7d2da;
+    color: #f5fbff;
 }
 #attendance-link{
-    color: #f8e1be;
+    color: #fff1f3;
 }
 .login-heading{
     font-family: myFirstFont,Arial, Helvetica, sans-serif;
     font-size: 50px;
     color: aliceblue;
+    
 }
 .btns{
     display: flex;
+    text-align: center;
+
+   
 }
 .login-btn,.signup-btn {
     margin-top: 6%;
+
     justify-content: center;
     text-align: center;
+    padding: 10px 20px;
+    background-color: #f5f3f5;
+    color: #1f1347; 
+    border:2px solid #1f1347;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.login-btn{
+/*.login-btn{
     margin-left: 40%;
-}
+}*/
