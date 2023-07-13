@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	font-family: Abel, Verdana, Geneva, Tahoma, sans-serif;
 	background: #435B66;
+    box-shadow: inset;
 }
 .pink-text{
     color:#eab2ac;
