@@ -1,4 +1,4 @@
-/* default styling. Nothing to do with freexing first row and column */
+/* default styling. Nothing to do with freezing first row and column */
 body{
     background-color: #EAB2A090;
 }
@@ -11,13 +11,12 @@ td, th {
       background: #f5f3f5;
       box-sizing: border-box;
       text-align: left;
-    
 }
 
 td{
     border-right:1px solid #2D4356;
     border-bottom:1px solid gray;
-    
+
 }
 th{
     border:1px solid #2D4356;
@@ -29,9 +28,6 @@ th{
   overflow-X: scroll;
     margin: 45px auto;
     border-radius: 10px;
-    sc
-  
-
 }
 
 thead th {
@@ -41,7 +37,6 @@ thead th {
   z-index: 2;
   background: #2D4356;
   color: #f5f3f5;
-  
 }
 
 thead th:first-child {
@@ -55,19 +50,39 @@ tbody {
   height: 200px;
 }
 
-/* MAKE LEFT COLUMN FIXEZ */
+/* MAKE LEFT COLUMN FIXED */
 tr > :first-child {
   position: -webkit-sticky;
-  position: sticky; 
+  position: sticky;
   background: #2D4356;
   color:#f5f3f5;
 
-  left: 0; 
+  left: 0;
 }
 /* don't do this */
 /*tr > :first-child {
   box-shadow: inset 0px 1px white;
 }*/
+.table-parent{
+  display: flex;
+  margin-right: none;
+}
+.table-child{
+  flex: 1;
+  margin-right: none;
+}
+.right-side-panel{
+  background-color: #2D4356;
+  max-width: 250px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  max-height: 510px;
+  margin: 45px 20px;
+}
+
 
 
 
