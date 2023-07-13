@@ -1,0 +1,9 @@
+.layout-container {
+    display: flex;
+  }
+  main {
+    flex: 3;
+  }
+  aside {
+    flex: 1;
+  }
