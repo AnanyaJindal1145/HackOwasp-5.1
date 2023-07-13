@@ -82,6 +82,18 @@ tr > :first-child {
   max-height: 510px;
   margin: 45px 20px;
 }
+#edit button{
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: aliceblue;
+  color: #2D4356;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
 
 
 

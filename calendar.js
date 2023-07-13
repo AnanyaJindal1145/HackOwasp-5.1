@@ -1,7 +1,7 @@
 !function() {
 
     var today = moment();
-  
+
     function Calendar(selector, events) {
       this.el = document.querySelector(selector);
       this.events = events;
@@ -15,50 +15,50 @@
         }, 500);
       }
     }
-  
+
     Calendar.prototype.draw = function() {
       //Create Header
       this.drawHeader();
-  
+
       //Draw Month
       this.drawMonth();
-  
+
       this.drawLegend();
     }
-  
+
     Calendar.prototype.drawHeader = function() {
       var self = this;
       if(!this.header) {
         //Create the header elements
         this.header = createElement('div', 'header');
         this.header.className = 'header';
-  
+
         this.title = createElement('h1');
-  
+
         var right = createElement('div', 'right');
         right.addEventListener('click', function() { self.nextMonth(); });
-  
+
         var left = createElement('div', 'left');
         left.addEventListener('click', function() { self.prevMonth(); });
-  
+
         //Append the Elements
-        this.header.appendChild(this.title); 
+        this.header.appendChild(this.title);
         this.header.appendChild(right);
         this.header.appendChild(left);
         this.el.appendChild(this.header);
       }
-  
+
       this.title.innerHTML = this.current.format('MMMM YYYY');
     }
-  
+
     Calendar.prototype.drawMonth = function() {
       var self = this;
-      
+
       this.events.forEach(function(ev) {
        ev.date = self.current.clone().date(Math.random() * (29 - 1) + 1);
       });
-      
-      
+
+
       if(this.month) {
         this.oldMonth = this.month;
         this.oldMonth.className = 'month out ' + (self.next ? 'next' : 'prev');
@@ -82,40 +82,40 @@
           this.month.className = 'month new';
       }
     }
-  
+
     Calendar.prototype.backFill = function() {
       var clone = this.current.clone();
       var dayOfWeek = clone.day();
-  
+
       if(!dayOfWeek) { return; }
-  
+
       clone.subtract('days', dayOfWeek+1);
-  
+
       for(var i = dayOfWeek; i > 0 ; i--) {
         this.drawDay(clone.add('days', 1));
       }
     }
-  
+
     Calendar.prototype.fowardFill = function() {
       var clone = this.current.clone().add('months', 1).subtract('days', 1);
       var dayOfWeek = clone.day();
-  
+
       if(dayOfWeek === 6) { return; }
-  
+
       for(var i = dayOfWeek; i < 6 ; i++) {
         this.drawDay(clone.add('days', 1));
       }
     }
-  
+
     Calendar.prototype.currentMonth = function() {
       var clone = this.current.clone();
-  
+
       while(clone.month() === this.current.month()) {
         this.drawDay(clone);
         clone.add('days', 1);
       }
     }
-  
+
     Calendar.prototype.getWeek = function(day) {
       if(!this.week || day.day() === 0) {
         this.week = createElement('div', 'week');
@@ -183,12 +183,12 @@
   
       var currentOpened = document.querySelector('.details');
   
-      //Check to see if there is an open detais box on the current row
+      //Check to see if there is an open details box on the current row
       if(currentOpened && currentOpened.parentNode === el.parentNode) {
         details = currentOpened;
         arrow = document.querySelector('.arrow');
       } else {
-        //Close the open events on differnt week row
+        //Close the open events on different week row
         //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
         if(currentOpened) {
           currentOpened.addEventListener('webkitAnimationEnd', function() {
