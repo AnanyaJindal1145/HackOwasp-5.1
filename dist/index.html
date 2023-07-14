@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../styles/attendance.css">
+    <link rel="stylesheet" href="../styles/calendar-2.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/bar-chart.css">
+    <link rel="stylesheet" href="../styles/calendar.css">
+    
+    <!----===== fonts and icons ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="deer-red.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Username</span>
+                    <span class="profession">student</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" id="schedule-click">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Schedule</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="calendar-click">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Calendar</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="analytics-click">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home" id="change">
+        <div class="text">Welcome,User!</div>
+
+        <!--========================== Main code starts============================-->
+
+        <div class="container">
+            <div class="heading">
+                <h1 class="heading-text">Your Schedule</h1>
+            </div>
+            <div class="kanban-board-full">
+
+
+                <div class="kanban-board upper">
+
+
+                    <div class="kanban-block" id="monday-block">
+                        <div class="kanban-block-heading" id="monday">
+                            <strong>MONDAY</strong>
+                        </div>
+                        <div class="kanban-block-space" id="monday-tasks">
+                            <button class="add-class-btn">+</button>
+                        </div>
+                    </div>
+
+
+                    <div class="kanban-block" id="tuesday-block" >
+                        <div class="kanban-block-heading" id="tuesday">
+                            <strong>TUESDAY</strong>
+                        </div>
+                        <div class="kanban-block-space" id="tuesday-tasks">
+                            <button class="add-class-btn">+</button>
+                        </div>
+                    </div>
+
+
+                    <div class="kanban-block" id="wednesday-block" >
+                        <div class="kanban-block-heading" id="wednesday">
+                            <strong>WEDNESDAY</strong>
+                        </div>
+                        <div class="kanban-block-space" id="wednesday-tasks">
+                            <button class="add-class-btn">+</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="kanban-board lower">
+
+                        <div class="kanban-block" id="thursday-block">
+                            <div class="kanban-block-heading" id="thursday">
+                                <strong>THURSDAY</strong>
+                            </div>
+                            <div class="kanban-block-space" id="thursday-tasks">
+                                <button class="add-class-btn">+</button>
+                            </div>
+                        </div>
+
+
+                        <div class="kanban-block" id="friday-block" >
+                            <div class="kanban-block-heading" id="friday">
+                                <strong>FRIDAY</strong>
+                            </div>
+                            <div class="kanban-block-space" id="friday-tasks">
+                                <button class="add-class-btn">+</button>
+                            </div>
+                        </div>
+
+
+                        <div class="kanban-block" id="saturday-block" >
+                            <div class="kanban-block-heading" id="saturday">
+                                <strong>SATURDAY</strong>
+                            </div>
+                            <div class="kanban-block-space" id="saturday-tasks">
+                                <button class="add-class-btn">+</button>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="../src/script.js"></script>
+</body>
+</html>
