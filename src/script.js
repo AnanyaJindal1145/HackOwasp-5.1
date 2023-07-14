@@ -10,7 +10,7 @@ $("")
 document.querySelector("#schedule-click").addEventListener("click", ()=>{
     document.querySelector("#change").innerHTML="<div class="text">Welcome,User!</div>
 
-    <!--========================== Main code starts============================-->
+    <!--==========================Main-code-starts============================-->
 
     <div class="container">
         <div class="heading">
