@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is an attendance and expense tracker made for Hackowasp 5.1 by\r [Ananya Jindal](https://github.com/AnanyaJindal1145/) and [Arushi Midha](https://github.com/arushi-midha/).",
   "main": "login.js",
+  "type":"commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
