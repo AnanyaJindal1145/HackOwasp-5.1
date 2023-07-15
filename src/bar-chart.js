@@ -47,12 +47,12 @@ const myChart = new Chart(ctx, {
 scales: {
     x: {
         ticks: {
-            fontColor: 'black'
+            fontColor: 'rgba(30,32,34, 1)'
           }
     }
     y: {
       ticks: {
-        fontcolor: "black"
+        fontColor: 'rgba(30,32,34, 1)'
       }
     }
   }
