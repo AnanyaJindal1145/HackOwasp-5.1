@@ -29,11 +29,12 @@ const myChart = new Chart(ctx, {
             },
         },
         backgroundColor: [
-            'rgba(240,245,249, 0.9)',
-            'rgba(240,245,249, 0.9)',
-            'rgba(240,245,249, 0.9)',
-            'rgba(240,245,249, 0.9)',
-            'rgba(240,245,249, 0.9)'
+            'rgba(240,245,249, 0.3)',
+            'rgba(240,245,249, 0.3)',
+            'rgba(240,245,249, 0.3)',
+            'rgba(240,245,249, 0.3)',
+            'rgba(240,245,249, 0.3)',
+            'rgba(240,245,249, 0.3)'
         ],
         indexAxis: "y",
         borderWidth: 2,
@@ -43,15 +44,15 @@ const myChart = new Chart(ctx, {
         responsive: false,
     }
 });
-// scales: {
-//     x: {
-//       ticks: {
-//         color: "black"
-//       }
-//     }
-//     y: {
-//       ticks: {
-//         color: "black"
-//       }
-//     }
-//   }
+scales: {
+    x: {
+        ticks: {
+            fontColor: 'black'
+          }
+    }
+    y: {
+      ticks: {
+        fontcolor: "black"
+      }
+    }
+  }
