@@ -86,13 +86,15 @@ body {
   .kanban-block-space{
     background-color:#c9d6df;
     margin-top: .4rem;
-    height:24rem;
+    min-height:25rem;
+    height:max-content;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
     text-align: center;
     box-shadow: 0px 0px 3px #1E2022;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
+    padding:.5rem;
     
   }
   
@@ -101,7 +103,7 @@ body {
     color:#1E202250;
     background-color: #c9d6df;
     border:none;
-    margin-top:7rem;
+    margin-top:8rem;
     cursor: pointer;
   }
 
@@ -110,4 +112,22 @@ body {
   
   }
 
+  /*post-it notes---------------------------*/
+
+  .post-it {
+    background-color: #1E2022;
+    width: 44%;
+    height: 110px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #c9d6df;
   
+  }
+
+  
+  
+  .note-content {
+    margin: 0;
+    line-height: 1.5;
+  }

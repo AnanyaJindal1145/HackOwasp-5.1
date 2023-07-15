@@ -4,7 +4,7 @@ const body = document.querySelector('body'),
       modeText = body.querySelector(".mode-text");
 
 
-$("")
+
 
 //schedule code here
 document.querySelector("#schedule-click").addEventListener("click", ()=>{

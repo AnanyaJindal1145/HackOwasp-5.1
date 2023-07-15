@@ -96,8 +96,8 @@
                         <div class="kanban-block-heading" id="monday">
                             <p>MONDAY</p>
                         </div>
-                        <div class="kanban-block-space" id="monday-tasks">
-                            <button class="add-class-btn">+</button>
+                        <div class="kanban-block-space" id="day1-tasks">
+                            <button class="add-class-btn" id="day1">+</button>
                         </div>
                     </div>
 
@@ -106,8 +106,8 @@
                         <div class="kanban-block-heading" id="tuesday">
                             <p>TUESDAY</p>
                         </div>
-                        <div class="kanban-block-space" id="tuesday-tasks">
-                            <button class="add-class-btn">+</button>
+                        <div class="kanban-block-space" id="day2-tasks">
+                            <button class="add-class-btn" id="day2">+</button>
                         </div>
                     </div>
 
@@ -116,8 +116,8 @@
                         <div class="kanban-block-heading" id="wednesday">
                             <p>WEDNESDAY</p>
                         </div>
-                        <div class="kanban-block-space" id="wednesday-tasks">
-                            <button class="add-class-btn">+</button>
+                        <div class="kanban-block-space" id="day3-tasks">
+                            <button class="add-class-btn" id="day3">+</button>
                         </div>
                     </div>
 
@@ -130,8 +130,8 @@
                             <div class="kanban-block-heading" id="thursday">
                                 <p>THURSDAY</p>
                             </div>
-                            <div class="kanban-block-space" id="thursday-tasks">
-                                <button class="add-class-btn">+</button>
+                            <div class="kanban-block-space" id="day4-tasks">
+                                <button class="add-class-btn" id="day4">+</button>
                             </div>
                         </div>
 
@@ -140,8 +140,8 @@
                             <div class="kanban-block-heading" id="friday">
                                 <p>FRIDAY</p>
                             </div>
-                            <div class="kanban-block-space" id="friday-tasks">
-                                <button class="add-class-btn">+</button>
+                            <div class="kanban-block-space" id="day5-tasks">
+                                <button class="add-class-btn" id="day5">+</button>
                             </div>
                         </div>
 
@@ -150,8 +150,8 @@
                             <div class="kanban-block-heading" id="saturday">
                                 <p>SATURDAY</p>
                             </div>
-                            <div class="kanban-block-space" id="saturday-tasks">
-                                <button class="add-class-btn">+</button>
+                            <div class="kanban-block-space" id="day6-tasks">
+                                <button class="add-class-btn" id="day6">+</button>
                             </div>
                         </div>
 
@@ -165,5 +165,26 @@
 <script src="../src/script.js"></script>
 <script src="../src/attendance.js"></script>
 <script src="../src/dashboard.js"></script>
+<script>
+    document.querySelector('form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      const displayDataDiv = document.getElementById('note-content');
+      const content = `
+        <p><strong>Name:</strong> ${data.class1}</p>
+        
+      `;
+      displayDataDiv.innerHTML = content;
+    })
+    .catch(error => console.error(error));
+  });
+</script>
 </body>
 </html>

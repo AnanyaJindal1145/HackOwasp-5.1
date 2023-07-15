@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .post-it {
+    background-color: #ffd700;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .note-content {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
