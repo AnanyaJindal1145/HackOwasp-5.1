@@ -22,12 +22,20 @@ const myChart = new Chart(ctx, {
         x: {
             ticks: {
                 color: 'rgb(0,0,0)',
-              }
+                font: {
+                  size: 18,
+                },
+              },
+            
         },
         y: {
           ticks: {
             color: 'rgb(0,0,0)',
-          }
+            font: {
+              size: 18,
+            },
+          },
+          
         }
       },
         plugins: {
