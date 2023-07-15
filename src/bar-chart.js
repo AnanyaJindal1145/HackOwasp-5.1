@@ -15,6 +15,7 @@ const myChart = new Chart(ctx, {
         datasets: [{
             label: 'Attendance Percentage',
             data: Object.values(data),
+            
         }, ],
     },
     options: {
