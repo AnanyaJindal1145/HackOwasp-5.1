@@ -11,26 +11,28 @@
   
   .container {
     width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
+    /* height: 100vh; */
+    background-color: #52616B;
     color: #000000;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    padding: 0px;
   }
   
   .calendar {
     width: 60rem;
     height: 52rem;
-    background-color: #ffffff;
+    background-color: #F0F5F9;
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
   }
   
   .month {
     width: 100%;
     height: 12rem;
-    background-color: #9B2242;
-    color: white;
+    background-color: #1E2022;
+    color: #F0F5F9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,14 +67,14 @@
   }
   
   .weekdays div {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
     width: calc(59.2rem / 7);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
   }
   
   .days {
@@ -83,20 +85,19 @@
   }
   
   .days div {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 0.3rem;
-    width: calc(55.2rem / 7);
+    width: calc(53.9rem / 7);
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
     transition: background-color 0.2s;
   }
   
-  .days div:hover:not(.today) {
-    /* background-color: #d4aeae; */
-    border: 0.2rem solid #9B2242;
+  .days div:hover {
+    border: 0.2rem solid #1E2022;
     cursor: pointer;
   }
   
@@ -106,8 +107,8 @@
   }
   
   .today {
-    background-color: #9B2242;
-    color: white;
+    background-color: #C9D6DF;
+    color: black;
   }
   /* .days div:not(.today,.prev-date,.next-date){
     border-bottom: 3px solid rgb(17, 95, 52);
