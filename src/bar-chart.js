@@ -18,6 +18,18 @@ const myChart = new Chart(ctx, {
         }, ],
     },
     options: {
+      scales: {
+        x: {
+            ticks: {
+                color: 'rgb(0,0,0)',
+              }
+        },
+        y: {
+          ticks: {
+            color: 'rgb(0,0,0)',
+          }
+        }
+      },
         plugins: {
             title: {
               display: true,
@@ -25,16 +37,17 @@ const myChart = new Chart(ctx, {
               color: 'rgba(30,32,34, 1)',
               font: {
                 size: 30,
-              }
+              },
+              
             },
         },
         backgroundColor: [
-            'rgba(240,245,249, 0.3)',
-            'rgba(240,245,249, 0.3)',
-            'rgba(240,245,249, 0.3)',
-            'rgba(240,245,249, 0.3)',
-            'rgba(240,245,249, 0.3)',
-            'rgba(240,245,249, 0.3)'
+            'rgba(240,245,249, 0.7)',
+            'rgba(240,245,249, 0.7)',
+            'rgba(240,245,249, 0.7)',
+            'rgba(240,245,249, 0.7)',
+            'rgba(240,245,249, 0.7)',
+            'rgba(240,245,249, 0.7)'
         ],
         indexAxis: "y",
         borderWidth: 2,
@@ -44,15 +57,3 @@ const myChart = new Chart(ctx, {
         responsive: false,
     }
 });
-scales: {
-    x: {
-        ticks: {
-            fontColor: 'rgba(30,32,34, 1)'
-          }
-    }
-    y: {
-      ticks: {
-        fontColor: 'rgba(30,32,34, 1)'
-      }
-    }
-  }
