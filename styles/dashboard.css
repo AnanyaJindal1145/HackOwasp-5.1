@@ -10,9 +10,8 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    border:4px solid red;
     background-color: #52616b;
-    
+    padding-top: 0px;
     
   }
   
@@ -20,13 +19,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    padding-top: 0px;
   }
   
   .kanban-board-full{
     display:flex;
     flex-direction: column;
-    border: 4px solid green;
     width:100%;
   }
 
@@ -42,15 +40,14 @@ body {
   }
   
   .heading-text {
-    font-size: 6rem;
+    font-size: 4rem;
     color: #1E2022;
     padding: 1rem 1.7rem;
-    font-weight:bold;
+    /* font-weight:bold; */
     margin: 1rem;
     font-family: Lobster;
-    text-shadow: 2px 2px #c9d6df;
-    margin-top:10rem;
-    
+    text-shadow: 1px 2px #c9d6df;
+    margin-top:0rem;
   }
   
   .kanban-block {
@@ -71,7 +68,7 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius:10px;
     padding: .7rem 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     color:#c9d6df;
     box-shadow: 0 0 3px #1E2022;
@@ -82,7 +79,7 @@ body {
   .kanban-block-space{
     background-color:#c9d6df;
     margin-top: .4rem;
-    height:30rem;
+    height:20rem;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
     text-align: center;
@@ -95,6 +92,6 @@ body {
     color:#1E202250;
     background-color: #c9d6df;
     border:none;
-    margin-top:9rem;
+    margin-top:5rem;
     cursor: pointer;
   }

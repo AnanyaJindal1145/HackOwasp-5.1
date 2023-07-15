@@ -336,7 +336,6 @@ body.dark .switch::before{
 
 .text{
     font-family:Oswald;
-    
 }
 
 .user-text{
@@ -346,6 +345,6 @@ body.dark .switch::before{
 html{
     overflow-y: scroll;
 }
-html::-webkit-scrollbar{
+/* html::-webkit-scrollbar{
     display: none;
-}
+} */
