@@ -11,10 +11,7 @@ app.get("/",(req,res)=>{
 
     });
 
-app.post("/",function(req,res){
-    var class1=req.body.class1;
-    res.json({ class1 });
-})
+
 
 
 
